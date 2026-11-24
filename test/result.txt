@@ -1,0 +1,13 @@
+No syntax errors detected in /s/mo2f-ga-secret-bridge.php
+PASS dry run rc0 + nothing written
+PASS write sets the exact old secret
+PASS old keys untouched
+PASS second write = no-op
+PASS wrong key -> stop, nothing written
+PASS no old secret -> skip
+PASS existing new secret never overwritten
+PASS undo deletes only mo2f_secret_ga
+usage: php mo2f-ga-secret-bridge.php /path/to/wordpress <user_id|--all> [--write|--undo]
+rc(no args)=2
+usage: php mo2f-ga-secret-bridge.php /path/to/wordpress <user_id|--all> [--write|--undo]
+rc(bad path)=2
